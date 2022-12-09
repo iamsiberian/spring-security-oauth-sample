@@ -1,0 +1,17 @@
+server:
+  maskedAddress: auth-server-1
+  port: 9000
+  clientId: sberid
+  clientSecret: ${server.clientId}secret
+
+defaultUser:
+  name: user
+  password: 123
+  role: user
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
